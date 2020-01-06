@@ -37,5 +37,12 @@
         {{ end }}
     </div>
     {{ end }}
+    {{ if .Params.series }}
+    <div class="blog-series">
+        {{ range .Params.series }}
+        <a href="{{ $.Site.LanguagePrefix | absURL }}/series/{{. | urlize }}/">{{ . }}</a>&nbsp;
+        {{ end }}
+    </div>
+    {{ end }}
 
 </article>
