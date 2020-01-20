@@ -40,7 +40,7 @@
     {{ if .Params.series }}
     <div class="blog-series">
         {{ range .Params.series }}
-        <a href="{{ "series" | absURL }}/series/{{. | urlize }}/">{{ . }}</a>&nbsp;
+        <a href="{{ "series" | absURL }}/{{. | urlize }}/">{{ . }}</a>&nbsp;
         {{ end }}
     </div>
     {{ end }}
