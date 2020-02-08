@@ -1,0 +1,17 @@
+<div class="panel panel-default">
+<ul class="fa-ul">
+    <li>
+        <h5><span class="fa-li" ><i class="fas fa-users"></i></span>{{.Page.Params.Conference}}</h5>
+    </li>
+    <li>
+        <h5><span class="fa-li"><i class="fas fa-map"></i></span>{{.Page.Params.Location}}</h5>
+    </li>
+    <li>
+        <h5><span class="fa-li"><i class="fas fa-calendar-alt"></i></span>{{ .Site.Params.dateformat | .Date.Format }}
+        </h5>
+    </li>
+</ul>
+</div>
+<blockquote class="blockquote">{{.Page.Params.TalkSummary}}</blockquote>
+
+<br/>

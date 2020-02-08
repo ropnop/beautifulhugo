@@ -3,6 +3,9 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       {{ if .Params.toc }} {{ partial "toc" .}} <hr> {{end}}
+      {{ if eq .Type "talk" }}
+        {{ partial "talkinfo" . }}
+      {{ end }}
       <article role="main" class="blog-post">
         {{ .Content }}
 
